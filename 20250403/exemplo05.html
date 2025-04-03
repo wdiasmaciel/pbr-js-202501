@@ -19,6 +19,16 @@
              margin: 2rem auto;
              box-shadow: 0.5rem 0.5rem 0.3rem 0.01rem #a2a2a3;
         }
+
+        img {
+            width: 12rem;
+            height: 7rem;
+        }
+
+        .titulo {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -32,7 +42,13 @@
              * Template string e interpolação.
              */
             var produto = prompt("Informe o nome do produto:");
-            document.write(`Produto: ${produto}`);    
+            var descricao = prompt("Informe a descrição do produto:");
+            var preco = prompt("Informe o preço do produto:");
+
+            document.write("<img src='image.png' alt='Logo de supermercado.'>");
+            document.write(`<h1 class="titulo">${produto}</h1>`);    
+            document.write(`<article class="descricao">${descricao}</article>`);
+            document.write(`<aside class="preco">${preco}</aside>`);        
         </script>
     </div>
 </body>
